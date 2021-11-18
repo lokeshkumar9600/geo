@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const { MongoClient } = require('mongodb');
 const mongoose = require("mongoose");
-const uri = process.env.DB;
+const uri = "mongodb+srv://lokixgodf:Loki.sg5656@geo.vw0lu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 var ejs = require("ejs");
 mongoose.connect(uri, {
   useNewUrlParser: true,
