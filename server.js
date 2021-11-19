@@ -31,9 +31,9 @@ app.post("/",(req, res) => {
         longitude:req.body.longitude
     },(err,save)=>{
         if(err){
-            console.log(err);
+            // console.log(err);
         }else{
-            console.log(save);
+            // console.log(save);
             res.redirect("/map");
         }
     });
@@ -42,9 +42,9 @@ app.post("/",(req, res) => {
 app.get("/map",(req, res) => {
     location.find({},(err,locations)=>{
         if(err){
-            console.log(err);
+            // console.log(err);
         }else{
-            console.log(locations);
+            // console.log(locations);
             res.render("Map",{users:locations})
         }
     })
